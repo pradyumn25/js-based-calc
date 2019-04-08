@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="C:\Users\Pradyumn pundir\Desktop\web\jsbasedcalc.css">
+    <link rel="icon" href="C:\Users\Pradyumn pundir\Desktop\web\icon.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+    <form name="calcform">
+        <div class="textbox">
+        <input type="text" name="txt1" style="align-content: right" ></div><br>
+        <input type="button" class="btn btn-outline-success" name="btn9" value="9" onclick="displaynum(btn9.value)"> 
+        <input type="button" class="btn btn-outline-success" name="btn8" value="8" onclick="displaynum(btn8.value)"> 
+        <input type="button" class="btn btn-outline-success" name="btn7" value="7" onclick="displaynum(btn7.value)"><br>
+        <input type="button" class="btn btn-outline-success" name="btn6" value="6" onclick="displaynum(btn6.value)"> 
+        <input type="button" class="btn btn-outline-success" name="btn5" value="5" onclick="displaynum(btn5.value)"> 
+        <input type="button" class="btn btn-outline-success" name="btn4" value="4" onclick="displaynum(btn4.value)"> <br> 
+        <input type="button" class="btn btn-outline-success" name="btn3" value="3" onclick="displaynum(btn3.value)"> 
+        <input type="button" class="btn btn-outline-success" name="btn2" value="2" onclick="displaynum(btn2.value)"> 
+        <input type="button" class="btn btn-outline-success" name="btn1" value="1" onclick="displaynum(btn1.value)"> <br>
+        <input type="button" class="btn btn-outline-success" name="btn0" value="0" onclick="displaynum(btn0.value)">
+        <input type="button" class="btn btn-outline-success" name="btn01" value="+" onclick="displaynum(btn01.value)">
+        <input type="button" class="btn btn-outline-success" name="btn02" value="*" onclick="displaynum(btn02.value)"><br>
+        <input type="button" class="btn btn-outline-success" name="btn03" value="/" onclick="displaynum(btn03.value)">
+        <input type="button" class="btn btn-outline-success" name="btn04" value="." onclick="displaynum(btn04.value)">
+        <input type="button"  class="btn btn-outline-success" name="btn05" value="=" onclick="txt1.value=eval(txt1.value)">
+    </form>
+</div> 
+    <script>
+            function displaynum(n1)
+            {
+                calcform.txt1.value=calcform.txt1.value+n1;
+            }
+            </script>
+            
+</body>
+</html>
